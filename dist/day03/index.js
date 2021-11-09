@@ -1,10 +1,10 @@
 import run from "aocrunner";
 const parseInput = (rawInput) => rawInput.split("\n").map((x) => x.trim().split(/\s+/).map(Number).sort((a, b) => a - b));
-const solution1 = async (rawInput) => {
+const part1 = (rawInput) => {
   const input = parseInput(rawInput);
   return input.filter(([a, b, c]) => a + b > c).length;
 };
-const solution2 = async (rawInput) => {
+const part2 = (rawInput) => {
   const input = parseInput(rawInput);
   return;
 };
@@ -19,10 +19,10 @@ run({
         expected: 1
       }
     ],
-    solution: solution1
+    solution: part1
   },
   part2: {
-    solution: solution2
+    solution: part2
   },
   trimTestInputs: true
 });

@@ -9,16 +9,15 @@ const parseInput = (rawInput: string) =>
       .sort((a, b) => a - b),
   )
 
-const solution1 = async (rawInput: string) => {
+const part1 = (rawInput: string) => {
   const input = parseInput(rawInput)
 
   return input.filter(([a, b, c]) => a + b > c).length
 }
 
-const solution2 = async (rawInput: string) => {
+const part2 = (rawInput: string) => {
   const input = parseInput(rawInput)
 
-  // Solution:
   return
 }
 
@@ -33,10 +32,10 @@ run({
         expected: 1,
       },
     ],
-    solution: solution1,
+    solution: part1,
   },
   part2: {
-    solution: solution2,
+    solution: part2,
   },
   trimTestInputs: true,
 })

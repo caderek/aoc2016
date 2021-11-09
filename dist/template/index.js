@@ -1,21 +1,21 @@
 import run from "aocrunner";
 const parseInput = (rawInput) => rawInput;
-const solution1 = async (rawInput) => {
+const part1 = (rawInput) => {
   const input = parseInput(rawInput);
   return;
 };
-const solution2 = async (rawInput) => {
+const part2 = (rawInput) => {
   const input = parseInput(rawInput);
   return;
 };
 run({
   part1: {
     tests: [],
-    solution: solution1
+    solution: part1
   },
   part2: {
     tests: [],
-    solution: solution2
+    solution: part2
   },
   trimTestInputs: true
 });

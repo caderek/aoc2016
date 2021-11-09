@@ -25,8 +25,7 @@ const keypad2 = [
 ]
 
 const solution =
-  (keypad: any[][], startX: number, startY: number) =>
-  async (rawInput: string) => {
+  (keypad: any[][], startX: number, startY: number) => (rawInput: string) => {
     const input = parseInput(rawInput)
     let x = startX
     let y = startY

@@ -18,7 +18,7 @@ const keypad2 = [
   [0, "A", "B", "C", 0],
   [0, 0, "D", 0, 0]
 ];
-const solution = (keypad3, startX, startY) => async (rawInput) => {
+const solution = (keypad3, startX, startY) => (rawInput) => {
   const input = parseInput(rawInput);
   let x = startX;
   let y = startY;

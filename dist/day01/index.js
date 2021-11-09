@@ -13,7 +13,7 @@ const mod = (a, b) => {
   const x = a % b;
   return x < 0n ? x + b : x;
 };
-const solution1 = async (rawInput) => {
+const part1 = (rawInput) => {
   const input = parseInput(rawInput);
   let x = 0;
   let y = 0;
@@ -25,7 +25,7 @@ const solution1 = async (rawInput) => {
   }
   return Math.abs(x) + Math.abs(y);
 };
-const solution2 = async (rawInput) => {
+const part2 = (rawInput) => {
   const input = parseInput(rawInput);
   let x = 0;
   let y = 0;
@@ -50,11 +50,11 @@ run({
       { input: `R2, R2, R2`, expected: 2 },
       { input: `R5, L5, R5, R3`, expected: 12 }
     ],
-    solution: solution1
+    solution: part1
   },
   part2: {
     tests: [{ input: `R8, R4, R4, R8`, expected: 4 }],
-    solution: solution2
+    solution: part2
   },
   trimTestInputs: true
 });
