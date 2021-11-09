@@ -15,7 +15,7 @@ const dirs = [
 
 const mod = (a: number, b: number) => {
   const x = a % b
-  return x < 0n ? x + b : x
+  return x < 0 ? x + b : x
 }
 
 const part1 = (rawInput: string) => {
