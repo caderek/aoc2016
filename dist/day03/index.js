@@ -1,31 +1,41 @@
 import run from "aocrunner";
-const parseInput = (rawInput) => rawInput.split("\n").map(
+import { chunk_ } from "@arrows/array";
+import { rotate } from "../utils/grid.js";
+const parseInputPart1 = (rawInput) => rawInput.split("\n").map(
   (x) => x.trim().split(/\s+/).map(Number).sort((a, b) => a - b)
 );
-const part1 = (rawInput) => {
-  const input = parseInput(rawInput);
-  return input.filter(([a, b, c]) => a + b > c).length;
-};
-const part2 = (rawInput) => {
-  const input = parseInput(rawInput);
-  return;
+const parseInputPart2 = (rawInput) => chunk_(
+  3,
+  rotate.left(rawInput.split("\n").map((x) => x.trim().split(/\s+/).map(Number))).reverse().flat()
+).map((x) => x.sort((a, b) => a - b));
+const solve = (parsingFn) => (rawInput) => {
+  return parsingFn(rawInput).filter(([a, b, c]) => a + b > c).length;
 };
 run({
   part1: {
     tests: [
       {
         input: `
-        5 10 25
-        5 6 9 
-      `,
+          5 10 25
+          5 6 9 
+        `,
         expected: 1
       }
     ],
-    solution: part1
+    solution: solve(parseInputPart1)
   },
   part2: {
-    solution: part2
-  },
-  trimTestInputs: true
+    tests: [
+      {
+        input: `
+          2 5 8
+          3 6 9
+          4 7 1
+        `,
+        expected: 2
+      }
+    ],
+    solution: solve(parseInputPart2)
+  }
 });
 //# sourceMappingURL=index.js.map

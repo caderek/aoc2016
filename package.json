@@ -21,5 +21,9 @@
   },
   "engines": {
     "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "@arrows/array": "^1.4.1",
+    "@arrows/composition": "^1.2.2"
   }
 }
