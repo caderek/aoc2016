@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../../src/template/index.ts"],
-  "sourcesContent": ["import run from \"aocrunner\"\n\nconst parseInput = (rawInput: string) => rawInput\n\nconst part1 = (rawInput: string) => {\n  const input = parseInput(rawInput)\n\n  return\n}\n\nconst part2 = (rawInput: string) => {\n  const input = parseInput(rawInput)\n\n  return\n}\n\nrun({\n  part1: {\n    tests: [\n      // { input: ``, expected: \"\" },\n    ],\n    solution: part1,\n  },\n  part2: {\n    tests: [\n      // { input: ``, expected: \"\" },\n    ],\n    solution: part2,\n  },\n  trimTestInputs: true,\n})\n"],
-  "mappings": "AAAA,OAAO,SAAS;AAEhB,MAAM,aAAa,CAAC,aAAqB;AAEzC,MAAM,QAAQ,CAAC,aAAqB;AAClC,QAAM,QAAQ,WAAW,QAAQ;AAEjC;AACF;AAEA,MAAM,QAAQ,CAAC,aAAqB;AAClC,QAAM,QAAQ,WAAW,QAAQ;AAEjC;AACF;AAEA,IAAI;AAAA,EACF,OAAO;AAAA,IACL,OAAO,CAEP;AAAA,IACA,UAAU;AAAA,EACZ;AAAA,EACA,OAAO;AAAA,IACL,OAAO,CAEP;AAAA,IACA,UAAU;AAAA,EACZ;AAAA,EACA,gBAAgB;AAClB,CAAC;",
+  "sourcesContent": ["import run from \"aocrunner\"\n\nconst parseInput = (rawInput: string) => rawInput\n\nconst part1 = (rawInput: string) => {\n  const input = parseInput(rawInput)\n  console.log(input)\n\n  return\n}\n\nconst part2 = (rawInput: string) => {\n  const input = parseInput(rawInput)\n\n  return\n}\n\nconst testInput = `\n\n`\n\nrun({\n  part1: {\n    tests: [{ input: testInput, expected: 1 }],\n    solution: part1,\n  },\n  part2: {\n    tests: [\n      // { input: testInput, expected: 1 },\n    ],\n    solution: part2,\n  },\n  onlyTests: true,\n})\n"],
+  "mappings": "AAAA,OAAO,SAAS;AAEhB,MAAM,aAAa,CAAC,aAAqB;AAEzC,MAAM,QAAQ,CAAC,aAAqB;AAClC,QAAM,QAAQ,WAAW,QAAQ;AACjC,UAAQ,IAAI,KAAK;AAEjB;AACF;AAEA,MAAM,QAAQ,CAAC,aAAqB;AAClC,QAAM,QAAQ,WAAW,QAAQ;AAEjC;AACF;AAEA,MAAM,YAAY;AAAA;AAAA;AAIlB,IAAI;AAAA,EACF,OAAO;AAAA,IACL,OAAO,CAAC,EAAE,OAAO,WAAW,UAAU,EAAE,CAAC;AAAA,IACzC,UAAU;AAAA,EACZ;AAAA,EACA,OAAO;AAAA,IACL,OAAO,CAEP;AAAA,IACA,UAAU;AAAA,EACZ;AAAA,EACA,WAAW;AACb,CAAC;",
   "names": []
 }
