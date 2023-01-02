@@ -11,7 +11,7 @@ const dirs = [
 ];
 const mod = (a, b) => {
   const x = a % b;
-  return x < 0n ? x + b : x;
+  return x < 0 ? x + b : x;
 };
 const part1 = (rawInput) => {
   const input = parseInput(rawInput);
@@ -30,7 +30,7 @@ const part2 = (rawInput) => {
   let x = 0;
   let y = 0;
   let dirIndex = 0;
-  const locations = new Set(["0,0"]);
+  const locations = /* @__PURE__ */ new Set(["0,0"]);
   for (const [dir, steps] of input) {
     dirIndex = mod(dirIndex + (dir === "R" ? 1 : -1), dirs.length);
     for (let i = 0; i < steps; i++) {

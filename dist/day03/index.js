@@ -1,5 +1,7 @@
 import run from "aocrunner";
-const parseInput = (rawInput) => rawInput.split("\n").map((x) => x.trim().split(/\s+/).map(Number).sort((a, b) => a - b));
+const parseInput = (rawInput) => rawInput.split("\n").map(
+  (x) => x.trim().split(/\s+/).map(Number).sort((a, b) => a - b)
+);
 const part1 = (rawInput) => {
   const input = parseInput(rawInput);
   return input.filter(([a, b, c]) => a + b > c).length;
