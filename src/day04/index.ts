@@ -70,18 +70,16 @@ const part2 = (rawInput: string) => {
   }
 }
 
-const testInput = `
-  aaaaa-bbb-z-y-x-123[abxyz]
-  a-b-c-d-e-f-g-h-987[abcde]
-  not-a-real-room-404[oarel]
-  totally-real-room-200[decoy]
-`
-
 run({
   part1: {
     tests: [
       {
-        input: testInput,
+        input: `
+          aaaaa-bbb-z-y-x-123[abxyz]
+          a-b-c-d-e-f-g-h-987[abcde]
+          not-a-real-room-404[oarel]
+          totally-real-room-200[decoy]
+        `,
         expected: 1514,
       },
     ],
@@ -91,9 +89,9 @@ run({
     tests: [
       {
         input: `
-        qzmt-zixmtkozy-ivhz-343[zimth]
-        north-pole-26[oehln]
-      `,
+          qzmt-zixmtkozy-ivhz-343[zimth]
+          north-pole-26[oehln]
+        `,
         expected: 26,
       },
     ],
