@@ -6,9 +6,9 @@ const part1 = (rawInput) => {
   let i = 0;
   const letters = [];
   while (letters.length < 8) {
-    const hashed = createHash("md5").update(`${input}${i}`).digest("hex");
-    if (hashed.startsWith("00000")) {
-      letters.push(hashed[5]);
+    const hash = createHash("md5").update(`${input}${i}`).digest("hex");
+    if (hash.startsWith("00000")) {
+      letters.push(hash[5]);
     }
     i++;
   }
@@ -20,10 +20,10 @@ const part2 = (rawInput) => {
   const ready = /* @__PURE__ */ new Set();
   const letters = [];
   while (ready.size < 8) {
-    const hashed = createHash("md5").update(`${input}${i}`).digest("hex");
-    const pos = Number(hashed[5]);
-    if (pos >= 0 && pos <= 7 && !ready.has(pos) && hashed.startsWith("00000")) {
-      letters[pos] = hashed[6];
+    const hash = createHash("md5").update(`${input}${i}`).digest("hex");
+    const pos = Number(hash[5]);
+    if (pos >= 0 && pos <= 7 && !ready.has(pos) && hash.startsWith("00000")) {
+      letters[pos] = hash[6];
       ready.add(pos);
     }
     i++;
