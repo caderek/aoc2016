@@ -71,5 +71,4 @@ run({
     tests: [{ input: testInput2, expected: 3 }],
     solution: part2,
   },
-  // onlyTests: true,
 })
