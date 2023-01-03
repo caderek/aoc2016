@@ -1,0 +1,58 @@
+{
+  "version": "3.0.4",
+  "year": "2016",
+  "language": "TypeScript",
+  "system": "Intel(R) Core(TM) i7-3630QM CPU @ 2.40GHz|x64|Linux|8GB",
+  "benchmark": 4897784576,
+  "days": [
+    {
+      "day": "01",
+      "level": 10,
+      "score": 1024,
+      "time": 0.686,
+      "rel": 0.014
+    },
+    {
+      "day": "02",
+      "level": 10,
+      "score": 1024,
+      "time": 2.655,
+      "rel": 0.054
+    },
+    {
+      "day": "03",
+      "level": 9,
+      "score": 512,
+      "time": 8.823,
+      "rel": 0.18
+    },
+    {
+      "day": "04",
+      "level": 7,
+      "score": 128,
+      "time": 31.266,
+      "rel": 0.638
+    },
+    {
+      "day": "05",
+      "level": 0,
+      "score": 1,
+      "time": 104110.191,
+      "rel": 2125.659
+    },
+    {
+      "day": "06",
+      "level": 9,
+      "score": 512,
+      "time": 9.526,
+      "rel": 0.194
+    },
+    {
+      "day": "07",
+      "level": 6,
+      "score": 64,
+      "time": 52.642,
+      "rel": 1.075
+    }
+  ]
+}

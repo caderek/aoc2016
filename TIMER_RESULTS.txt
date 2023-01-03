@@ -1,0 +1,57 @@
+
+    +--- AoC 2016 - AOC TIMER ---------------------------+
+    |                                                    |
+    | Linux (x64) 8GB RAM                                |
+    | Intel(R) Core(TM) i7-3630QM CPU @ 2.40GHz          |
+    |                                                    |
+    | Language: TypeScript                               |
+    |                                                    |
+    |--- DAYS -------------------------------------------|
+    |                                                    |
+    | Day 01                                             |
+    | ------                                             |
+    | Time: 0.686ms                   Points: 1024       |
+    | Benchmark: 0.014%               Level: **********  |
+    |                                                    |
+    | Day 02                                             |
+    | ------                                             |
+    | Time: 2.655ms                   Points: 1024       |
+    | Benchmark: 0.054%               Level: **********  |
+    |                                                    |
+    | Day 03                                             |
+    | ------                                             |
+    | Time: 8.823ms                   Points: 512        |
+    | Benchmark: 0.18%                Level: *********-  |
+    |                                                    |
+    | Day 04                                             |
+    | ------                                             |
+    | Time: 31.266ms                  Points: 128        |
+    | Benchmark: 0.638%               Level: *******---  |
+    |                                                    |
+    | Day 05                                             |
+    | ------                                             |
+    | Time: 104110.191ms              Points: 1          |
+    | Benchmark: 2125.659%            Level: ----------  |
+    |                                                    |
+    | Day 06                                             |
+    | ------                                             |
+    | Time: 9.526ms                   Points: 512        |
+    | Benchmark: 0.194%               Level: *********-  |
+    |                                                    |
+    | Day 07                                             |
+    | ------                                             |
+    | Time: 52.642ms                  Points: 64         |
+    | Benchmark: 1.075%               Level: ******----  |
+    |                                                    |
+    |--- SUMMARY ----------------------------------------|
+    |                                                    |
+    | Completed: 7 / 25                                  |
+    |                                                    |
+    | Total time: 104215.789ms                           |
+    | Benchmark (average): 303.973%                      |
+    |                                                    |
+    | Total score: 3265                                  |
+    | Level (average): *******---                        |
+    |                                                    |
+    +----------------------------------- git.io/JL9Qu ---+
+
